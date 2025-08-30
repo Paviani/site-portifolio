@@ -1,0 +1,100 @@
+/*
+  Este é um ficheiro CSS para o projeto de portfólio pessoal.
+  O código está comentado para ajudar os iniciantes a entender o que cada parte faz.
+*/
+
+/* Estilos Gerais do Corpo da Página */
+body {
+  font-family: Arial, sans-serif; /* Define a família de fontes para a página */
+  line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o preenchimento padrão do body */
+  background-color: #ecf0f1; /* Define uma cor de fundo cinza claro */
+  color: #333; /* Define a cor do texto principal */
+}
+
+/* Estilização do Cabeçalho */
+header {
+  background-color: #2c3e50; /* Cor de fundo escura para o cabeçalho */
+  color: #fff; /* Cor do texto branco */
+  padding: 1rem 0; /* Preenchimento de 1rem em cima/baixo e 0 nos lados */
+  text-align: center; /* Centraliza o texto */
+}
+
+header h1 {
+  margin: 0; /* Remove a margem do h1 para um alinhamento mais preciso */
+}
+
+/* Estilização da Barra de Navegação */
+nav ul {
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  list-style: none; /* Remove os marcadores da lista */
+}
+
+nav ul li {
+  display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
+  margin: 0 15px; /* Adiciona margem entre os links */
+}
+
+nav a {
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o rato */
+}
+
+/* Estilização do Conteúdo Principal */
+main {
+  padding: 20px; /* Adiciona preenchimento ao redor do conteúdo principal */
+  max-width: 800px; /* Define uma largura máxima para o conteúdo */
+  margin: 20px auto; /* Centraliza o conteúdo principal na página */
+  background: #fff; /* Fundo branco para a área de conteúdo */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para a Imagem de Perfil */
+.profile-pic {
+  display: block; /* Garante que a imagem seja um bloco para aplicar margem auto */
+  margin: 0 auto 20px; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+  width: 150px; /* Largura fixa */
+  height: 150px; /* Altura fixa */
+  border-radius: 50%; /* Torna a imagem perfeitamente circular */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilização dos Artigos de Projeto */
+article {
+  margin-bottom: 20px; /* Espaço abaixo de cada projeto */
+  border-bottom: 1px solid #eee; /* Linha separadora */
+  padding-bottom: 20px; /* Preenchimento abaixo do conteúdo do artigo */
+}
+
+article:last-child {
+  border-bottom: none; /* Remove a borda do último artigo */
+}
+
+/* Estilização do Rodapé */
+footer {
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona preenchimento */
+  margin-top: 20px; /* Espaço acima do rodapé */
+  background-color: #2c3e50; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto branco */
+}
+
+/* Layout Responsivo para Telas Pequenas (Telemóveis) */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block; /* Faz com que os links da navegação fiquem um abaixo do outro */
+    margin-bottom: 10px; /* Adiciona espaço entre os links empilhados */
+  }
+
+  main {
+    margin: 10px; /* Reduz a margem em telas pequenas */
+    padding: 15px; /* Reduz o preenchimento */
+  }
+}
